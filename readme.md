@@ -2,8 +2,9 @@ download the repo like this:
 ```
 gh repo clone lyrarobinson/clipcat_tool
 ```
-download the model from here, dont unzip just add it to the directory:
-https://huggingface.co/lyrarobinson/ppo_imageglitch_latest
+download the model from here, dont unzip just add it to the directory: \
+https://huggingface.co/lyrarobinson/ppo_imageglitch_latest  \
+At the moment it doesn't work very well because I haven't had a chance to train it enough, but I'll upload any later versions on the same link
 
 first, create a new environment (doesn't have to be conda but i think its easier):
 ```
@@ -15,7 +16,7 @@ conda activate clipcat_env
 ```
 cd into the directory you cloned this repo into:
 ```
-cd C:\path\to\clipcat-tool
+cd C:\path\to\clipcat_tool
 ```
 install the dependencies from the setup.py file (there's a few, the environment ends up being just over 2 gigabytes):
 ```
