@@ -1,5 +1,8 @@
 download the repo like this:
-git clone
+gh repo clone lyrarobinson/clipcat_tool
+
+download the model from here, dont unzip just add it to the directory:
+https://huggingface.co/lyrarobinson/ppo_imageglitch_latest
 
 first, create a new environment (doesn't have to be conda but i think its easier):
 conda create -n clipcat_env python=3.11.7
