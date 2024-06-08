@@ -15,7 +15,7 @@ conda activate clipcat_env
 ```
 cd into the directory you cloned this repo into:
 ```
-cd C:\path\to\cat-tool
+cd C:\path\to\clipcat-tool
 ```
 install the dependencies from the setup.py file (there's a few, the environment ends up being just over 2 gigabytes):
 ```
