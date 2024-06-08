@@ -13,7 +13,7 @@ activate the new environment:
 ```
 conda activate clipcat_env
 ```
-cd into it the directory you cloned this repo into:
+cd into the directory you cloned this repo into:
 ```
 cd C:\path\to\cat-tool
 ```
