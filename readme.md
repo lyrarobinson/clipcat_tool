@@ -47,3 +47,5 @@ if you make any changes to the code, refresh the environment installation with t
 ```
 pip install -e .
 ```
+
+to train your own model, just run the train.py script.
