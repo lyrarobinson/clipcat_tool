@@ -34,7 +34,7 @@ clipcat "./sampleimages" "./processed_images"
 ```
 you can use it from anywhere, as long as you have the environment activated and use absolute paths :)
 
-Also, it helps to add the environment variables to the activate.bat script, like this:
+Also, it helps to add the environment variables to the end activate.bat script, like this:
 ```
 rem Add custom environment variables
 set PYTHONPATH=%PYTHONPATH%;C:path\to\clipcat-tool
@@ -43,7 +43,7 @@ set PYTHONPATH=%PYTHONPATH%;C:\path\to\directory\with\loop3
 ```
 for me, the script was located at C:\ProgramData\anaconda3\envs\clipcat_env\Lib\venv\scripts\nt
 
-if you make any changes to the code, refresh the environemnt installation with this:
+if you make any changes to the code, refresh the environment installation with this:
 ```
 pip install -e .
 ```
