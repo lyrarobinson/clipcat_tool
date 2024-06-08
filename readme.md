@@ -1,6 +1,7 @@
 download the repo like this:
+```
 gh repo clone lyrarobinson/clipcat_tool
-
+```
 download the model from here, dont unzip just add it to the directory:
 https://huggingface.co/lyrarobinson/ppo_imageglitch_latest
 
