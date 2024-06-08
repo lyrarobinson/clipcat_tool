@@ -1,3 +1,5 @@
+![example](example.jpg)
+
 download the repo like this:
 ```
 gh repo clone lyrarobinson/clipcat_tool
