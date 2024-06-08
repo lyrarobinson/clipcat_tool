@@ -1,0 +1,2 @@
+[console_scripts]
+clipcat = clipcat_tool:main

@@ -29,43 +29,6 @@ def classify_image(img):
         max_similarity = similarities.max().item()
     return predicted_label, max_similarity
 
-def color_channel_shift(img_array, shift_amount):
-    height, width, channels = img_array.shape
-    for channel in range(channels):
-        img_array[:, :, channel] = np.roll(img_array[:, :, channel], shift_amount, axis=0)
-    return img_array
-
-def random_pixel_noise(img_array, noise_level=15):
-    noise = np.random.randint(-noise_level, noise_level + 1, img_array.shape)
-    img_array = np.clip(img_array + noise, 0, 255)
-    return img_array
-
-def block_shift(img_array, block_size=150):
-    height, width, _ = img_array.shape
-    for start_row in range(0, height, block_size):
-        for start_col in range(0, width, block_size):
-            end_row = min(start_row + block_size, height)
-            end_col = min(start_col + block_size, width)
-            shift_amount_row = random.randint(-block_size//1, block_size//1)
-            shift_amount_col = random.randint(-block_size//1, block_size//1)
-            img_array[start_row:end_row, start_col:end_col] = np.roll(
-                img_array[start_row:end_row, start_col:end_col],
-                shift=(shift_amount_row, shift_amount_col),
-                axis=(0, 1)
-            )
-    return img_array
-
-def create_glitch_art(img, action):
-    img = img.resize((224, 224)).convert('RGB')
-    img_array = np.array(img, dtype=np.uint8)
-    if action[0] > 0:
-        img_array = color_channel_shift(img_array, action[0])
-    if action[1] > 0:
-        img_array = random_pixel_noise(img_array, action[1] * 3)
-    if action[2] > 0:
-        img_array = block_shift(img_array, action[2] * 30)
-    return Image.fromarray(img_array.astype(np.uint8), 'RGB')
-
 class ImageGlitchEnv(gym.Env):
     """Custom Environment that processes images with glitches and saves the output."""
 

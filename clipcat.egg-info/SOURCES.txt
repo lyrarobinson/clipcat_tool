@@ -1,0 +1,8 @@
+clipcat_tool.py
+setup.py
+clipcat.egg-info/PKG-INFO
+clipcat.egg-info/SOURCES.txt
+clipcat.egg-info/dependency_links.txt
+clipcat.egg-info/entry_points.txt
+clipcat.egg-info/requires.txt
+clipcat.egg-info/top_level.txt
