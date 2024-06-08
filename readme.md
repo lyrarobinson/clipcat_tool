@@ -2,9 +2,9 @@ download the repo like this:
 ```
 gh repo clone lyrarobinson/clipcat_tool
 ```
-download the model from here, dont unzip just add it to the directory:
+download the model from here, dont unzip just add it to the directory: \
+https://huggingface.co/lyrarobinson/ppo_imageglitch_latest  \
 At the moment it doesn't work very well because I haven't had a chance to train it enough, but I'll upload any later versions on the same link
-https://huggingface.co/lyrarobinson/ppo_imageglitch_latest
 
 first, create a new environment (doesn't have to be conda but i think its easier):
 ```
