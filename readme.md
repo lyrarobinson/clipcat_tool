@@ -35,7 +35,7 @@ clipcat "./sampleimages" "./processed_images"
 ```
 you can use it from anywhere, as long as you have the environment activated and use absolute paths :)
 
-Also, it helps to add the environment variables to the end activate.bat script, like this:
+Also, it helps to add the environment variables to the end of the activate.bat script, like this:
 ```
 rem Add custom environment variables
 set PYTHONPATH=%PYTHONPATH%;C:path\to\clipcat-tool
